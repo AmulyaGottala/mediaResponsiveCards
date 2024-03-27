@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+}
+
+.card {
+  display: flex;
+  padding: 20px;
+  background-color: #f5eded;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  bottom: 500px;
+  padding: 200px 100px;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: rgb(244, 145, 16);
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+
+/* adding responsiveness */
+
+/* for mobiles */
+@media only screen and (max-width: 768px) {
+  .cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    margin: 10px;
+  }
+}
+
+/* for tablets and small laptops */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .cards-container {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 40%;
+    margin: 10px;
+  }
+}
